@@ -1,0 +1,47 @@
+/* Regular */
+@font-face {
+    font-family: 'Beatrice';
+    src: url('../fonts/BeatriceDeck-Regular.woff2') format('woff2'),
+         url('../fonts/BeatriceDeck-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Regular Italic */
+@font-face {
+    font-family: 'Beatrice';
+    src: url('../fonts/BeatriceDeck-RegularItalic.woff2') format('woff2'),
+         url('../fonts/BeatriceDeck-RegularItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Beatrice';
+    src: url('../fonts/BeatriceDeck-Bold.woff2') format('woff2'),
+         url('../fonts/BeatriceDeck-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Beatrice';
+    src: url('../fonts/BeatriceDeck-BoldItalic.woff2') format('woff2'),
+         url('../fonts/BeatriceDeck-BoldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Применение */
+body {
+    font-family: 'Beatrice', sans-serif;
+}
