@@ -9,31 +9,77 @@
 </head>
 
 <body>
-    <header>
-        <img src="images\icon.svg" alt="Логотип">
-        <h1>Магазин одежды</h1>
+<header class="site-header">
+    
+    <!-- ЛЕВАЯ ЧАСТЬ -->
+    <div class="header-left">
+        <a href="#" class="menu-btn">
+        <img src="images/menu.svg" alt="Меню">
+        </a>
+
         <nav>
             <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Collections</a></li>
                 <li><a href="#">New</a></li>
-                <li><a href="#">Cart</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+
+    <!-- ЦЕНТР -->
+    <img src="images/icon.svg" alt="Логотип" class="center-icon">      
+
+    <!-- ПРАВАЯ ЧАСТЬ -->
+    <div class="header-right">
+
+        <a href="#" class="icon-btn">
+            <img src="images/heart.svg" alt="Избранное">
+        </a>
+
+        <a href="#" class="cart-btn">
+            <img src="images/cart.svg" alt="Корзина">
+            <span>Cart</span>
+        </a>
+
+        <a href="#" class="shop-btn">
+            <img src="images\shop.svg" alt="Shop">
+        </a>
+
+        <a href="#" class="icon-btn">
+            <img src="images/user.svg" alt="Профиль">
+        </a>
+
+    </div>
+
+</header>
+    
     <main class="main">
-        <section>
+
+        <section class="categories-search">
+            <div class="categories">
+                <ul>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+               </ul>
+            </div>
+            
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+        </section>
+
+        <!--<section>
             <div>
                 <button></button>
                 <h2>NEW COLLECTION</h2>
                 <a href="#" target="_blank">Summer 2024</a>
             </div>
             <ul></ul>
-        </section>
-        <section>
+        </section>--> 
 
-        </section>
     </main>
+
     <footer>
 
     </footer>

@@ -45,3 +45,172 @@
 body {
     font-family: 'Beatrice', sans-serif;
 }
+
+/* Шапка сайта */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 125px;
+    padding: 0 40px;
+
+    position: relative;
+}
+
+/* ===== ЛЕВАЯ ЧАСТЬ ===== */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ===== МЕНЮ-КНОПКА ===== */
+.icon-btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background-color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.navigation {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* ===== ЦЕНТРАЛЬНАЯ ИКОНКА ===== */
+.center-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 35px;
+    height: 35px;
+}
+
+/* ===== ПРАВАЯ ЧАСТЬ ===== */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ===== КНОПКА CART ===== */
+.cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 1px; /* левый padding больше, чтобы текст был визуально по центру */
+    border-radius: 18px;
+    margin-right: -45px;
+
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-btn span {
+    font-size: 12px;
+    display: inline-block;
+}
+
+/* ===== КНОПКА МЕНЮ ===== */
+.menu-btn {
+    background: none;
+    width: 26px;
+    height: 16px;
+}
+
+.menu-btn img {
+    width: 26px;
+    height: 16px;
+}
+
+/* ===== КНОПКА SHOP ===== */
+.shop-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shop-btn img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* ===== MAIN ===== */
+.categories-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px; 
+}
+
+.categories ul {         
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    width: 180px; /* можно подогнать */
+}
+
+.search input::placeholder {
+    color: #aaa;
+}
