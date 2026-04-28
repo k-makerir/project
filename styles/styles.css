@@ -16,6 +16,7 @@
     font-style: italic;
 }
 
+
 /* Bold */
 @font-face {
     font-family: 'Beatrice';
@@ -34,6 +35,15 @@
     font-style: italic;
 }
 
+/* Extra Bold */
+@font-face {
+    font-family: 'Beatrice';
+    src: url('../fonts/BeatriceDeck-Extrabold.woff2') format('woff2'),
+         url('../fonts/BeatriceDeck-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
 /* Сброс */
 * {
     margin: 0;
@@ -44,6 +54,7 @@
 /* Применение */
 body {
     font-family: 'Beatrice', sans-serif;
+    line-height: normal;
 }
 
 /* Шапка сайта */
@@ -101,11 +112,6 @@ body {
 
 /* ===== ЦЕНТРАЛЬНАЯ ИКОНКА ===== */
 .center-icon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
     width: 35px;
     height: 35px;
 }
@@ -122,7 +128,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px 10px 1px; /* левый padding больше, чтобы текст был визуально по центру */
+    padding: 10px 20px 10px 1px; 
     border-radius: 18px;
     margin-right: -45px;
 
@@ -173,44 +179,154 @@ body {
 }
 
 /* ===== MAIN ===== */
-.categories-search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.categories {
     padding: 20px 40px; 
 }
 
-.categories ul {         
+.categories ul { 
     list-style: none;   
-    padding: 0;
-    margin: 0;
 }
 
 .categories a {
     text-decoration: none;
     color: #000;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.category-link {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    font-weight: 600;
+.search-form {
+    display: flex;
+    align-items: center;
+
+    background-color: #d9d9d9;
+    width: 367px;
+    height: 50px; 
+    border-radius: 2px;
+
+    margin-left: 41px;
+    padding: 0 10px;
+}
+
+/* кнопка-иконка */
+.search-btn {
+    width: 20px;
+    height: 20px;
+
+    background: url(../images/search.svg) no-repeat center;
+    background-size: 15px 15px;
+
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 1px;
+}
+
+/* поле ввода */
+.search-form input {
+    width: 367px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+
+    text-align: right;
+    padding-right: 26px;
+    font-size: 12px;
+
+    display: inline-block;
+    transform: scaleX(1.1);
     letter-spacing: 1px;
+}
+
+.new-collection {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    padding: 60px 40px;
+}
+
+.collection-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 0.9;
+}
+
+.collection-text p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.collection-text {
+    display: flex;
+    flex-direction: column;
+    height: 376px;
+
+}
+
+.shop-btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 250px;
+
+
+    padding: 12px 14px;
+    border: none;
+
+    background-color: #d9d9d9;
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.shop-btn-main img {
+    width: 47px;
+    height: auto;
+    display: block;
+}
+
+.arrow-btn {
+    background: none;
+    border: none;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     cursor: pointer;
 }
 
-.search input {
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    outline: none;
-    width: 180px; /* можно подогнать */
+.arrow-btn img {
+    width: auto;
+    height: auto;
+    display: block;
 }
 
-.search input::placeholder {
-    color: #aaa;
+.shop-row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: auto;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.collection-images {
+    display: flex;
+    gap: 30px;
+    height: 376px;
+}
+
+.collection-images img {
+    width: 366px;
+    height: 376px;
 }

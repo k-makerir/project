@@ -14,7 +14,7 @@
     <!-- ЛЕВАЯ ЧАСТЬ -->
     <div class="header-left">
         <a href="#" class="menu-btn">
-        <img src="images/menu.svg" alt="Меню">
+        <img src="images/menu.svg" alt="Меню" width="26" height="16">
         </a>
 
         <nav>
@@ -27,26 +27,26 @@
     </div>
 
     <!-- ЦЕНТР -->
-    <img src="images/icon.svg" alt="Логотип" class="center-icon">      
+    <img src="images/icon.svg" alt="Логотип" class="center-icon" width="35" height="35">      
 
     <!-- ПРАВАЯ ЧАСТЬ -->
     <div class="header-right">
 
         <a href="#" class="icon-btn">
-            <img src="images/heart.svg" alt="Избранное">
+            <img src="images/heart.svg" alt="Избранное" width="50" height="50">
         </a>
 
         <a href="#" class="cart-btn">
-            <img src="images/cart.svg" alt="Корзина">
+            <img src="images/cart.svg" alt="Корзина" width="76" height="50">
             <span>Cart</span>
         </a>
 
         <a href="#" class="shop-btn">
-            <img src="images\shop.svg" alt="Shop">
+            <img src="images/shop.svg" alt="Shop" width="50" height="50">
         </a>
 
         <a href="#" class="icon-btn">
-            <img src="images/user.svg" alt="Профиль">
+            <img src="images/user.svg" alt="Профиль" width="50" height="50">
         </a>
 
     </div>
@@ -55,28 +55,51 @@
     
     <main class="main">
 
-        <section class="categories-search">
-            <div class="categories">
-                <ul>
-                    <li><a href="#">MEN</a></li>
-                    <li><a href="#">WOMEN</a></li>
-                    <li><a href="#">KIDS</a></li>
-               </ul>
-            </div>
-            
-            <div class="search">
-                <input type="text" placeholder="Search">
-            </div>
+        <section class="categories">
+            <ul>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">KIDS</a></li>
+            </ul>
         </section>
 
-        <!--<section>
-            <div>
-                <button></button>
-                <h2>NEW COLLECTION</h2>
-                <a href="#" target="_blank">Summer 2024</a>
+        <form action="/" class="search-form">
+            <button type="submit" class="search-btn"></button>
+            <input type="text" placeholder="Search">
+        </form>
+
+        <section class="new-collection">
+
+            <div class="collection-text">
+                <h1>NEW<br>COLLECTION</h1>
+                <p>Summer<br>2024</p>
+
+                <div class="shop-row">
+                    
+                    <button class="shop-btn-main">
+                        <span>Go To Shop</span>
+                        <img src="images/long_right.svg" alt="long-right">
+                    </button>
+
+                    <div class="arrows">
+                        <button class="arrow-btn">
+                            <img src="images/left.svg" alt="left">
+                        </button>
+
+                        <button class="arrow-btn">
+                            <img src="images/right.svg" alt="right">
+                        </button>
+                    </div>
+
+                </div>
             </div>
-            <ul></ul>
-        </section>--> 
+
+            <div class="collection-images">
+                <img src="images/men_white.jpg" alt="Модель 1">
+                <img src="images/black_shirt.jpg" alt="Модель 2">
+            </div>
+
+        </section>
 
     </main>
 
