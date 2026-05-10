@@ -1,3 +1,12 @@
+/* Light */
+@font-face {
+    font-family: 'Beatrice';
+    src: url('../fonts/BeatriceDeck-Light.woff2') format('woff2'),
+         url('../fonts/BeatriceDeck-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
 /* Regular */
 @font-face {
     font-family: 'Beatrice';
@@ -239,18 +248,18 @@ body {
     letter-spacing: 1px;
 }
 
+.section-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 0.9;
+}
+
 .new-collection {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
 
     padding: 60px 40px;
-}
-
-.collection-text h1 {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 0.9;
 }
 
 .collection-text p {
@@ -329,4 +338,353 @@ body {
 .collection-images img {
     width: 366px;
     height: 376px;
+}
+
+.week-header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.week-header .collections-top {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.week-header span {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.products {
+    display: grid;
+    gap: 30px;
+
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-card small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+.product-card p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-card span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.new-this-week .products { 
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+} 
+
+.new-this-week .product-card {
+    width: 320px;
+}
+
+.new-this-week .product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.new-this-week .product-card:last-child img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.new-this-week .product-card:last-child {
+    margin-right: -96px;
+}
+
+.collections .products { 
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.arrows-week {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5px;
+}
+
+.product-info p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-info span {
+    font-size: 14px;
+}
+
+.collections {
+    padding: 60px 40px;
+}
+
+.family {
+    display: flex;
+    gap: 25px;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+}
+
+.collections-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: 30px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px; 
+}
+
+.sort-order {
+    font-size: 12px;
+    color: #777;
+
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.more button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more button::after {
+    content: "";
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+    transform: rotate(45deg);
+    margin-top: 6px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.new-collection,
+.new-this-week,
+.collections {
+    padding: 60px 40px; 
+}
+
+.fashion-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    transform-origin: center;
+
+    margin-bottom: 80px;
+}
+
+.fashion-text h1 {
+    font-size: 48px; 
+    font-weight: 400;
+}
+
+.fashion-text p {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.picture {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+
+    padding-left: 40px;
+}
+
+.picture img {
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    justify-self: center;
+}
+
+.picture img:nth-child(1),
+.picture img:nth-child(3) {
+    align-self: start;
+}
+
+.picture img:nth-child(2),
+.picture img:nth-child(4) {
+    margin-top: 60px;
+}
+
+.picture img:last-child {
+    max-height: 390px;
+    object-fit: cover;
+}
+
+/* подвал */
+
+footer {
+    padding: 80px 40px 30px;
+    background: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    row-gap: 120px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 60px;
+}
+
+/* заголовки блоков */
+.label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+/* списки */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.list p {
+    line-height: 1;
+    margin: 0;
+}
+
+/* центр */
+.tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.tech-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+
+    margin-left: 215px;
+}
+
+.tech-list h1 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+.vr {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vr h1 {
+    opacity: 0.1;
+}
+
+.vr img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-135%, -50%);
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+}
+
+.xiv-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nfc {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+    white-space: nowrap;
+
+    transform: translateY(-25px);
+}
+
+/* нижняя линия */
+.floor {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+    font-size: 10px;
+    color: #888;
+}
+
+.copyright {
+    position: absolute;
+    right: -320px;
+}
+
+.privacy {
+    position: absolute;
+    left: 900px;
 }
