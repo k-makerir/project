@@ -2,314 +2,325 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-<header class="site-header">
-    
-    <!-- ЛЕВАЯ ЧАСТЬ -->
-    <div class="header-left">
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- ЛЕВАЯ ЧАСТЬ -->
+      <div class="header-left">
         <a href="#" class="menu-btn">
-        <img src="images/menu.svg" alt="Меню" width="26" height="16">
+          <img src="images/menu.svg" alt="Меню" width="26" height="16">
         </a>
 
         <nav>
-            <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">New</a></li>
-            </ul>
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">New</a></li>
+          </ul>
         </nav>
-    </div>
+      </div>
 
-    <!-- ЦЕНТР -->
-    <img src="images/icon.svg" alt="Логотип" class="center-icon" width="35" height="35">      
+      <!-- ЦЕНТР -->
+      <img src="images/icon.svg" alt="Логотип" class="center-icon" width="35" height="35">
 
-    <!-- ПРАВАЯ ЧАСТЬ -->
-    <div class="header-right">
+      <!-- ПРАВАЯ ЧАСТЬ -->
+      <div class="header-right">
 
         <a href="#" class="icon-btn">
-            <img src="images/heart.svg" alt="Избранное" width="50" height="50">
+          <img src="images/heart.svg" alt="Избранное" width="50" height="50">
         </a>
 
         <a href="#" class="cart-btn">
-            <img src="images/cart.svg" alt="Корзина" width="76" height="50">
-            <span>Cart</span>
+          <img src="images/cart.svg" alt="Корзина" width="76" height="50">
+          <span>Cart</span>
         </a>
 
         <a href="#" class="shop-btn">
-            <img src="images/shop.svg" alt="Shop" width="50" height="50">
+          <img src="images/shop.svg" alt="Shop" width="50" height="50">
         </a>
 
         <a href="#" class="icon-btn">
-            <img src="images/user.svg" alt="Профиль" width="50" height="50">
+          <img src="images/user.svg" alt="Профиль" width="50" height="50">
         </a>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="main container">
+
+    <section class="categories">
+      <ul>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">KIDS</a></li>
+      </ul>
+    </section>
+
+    <form action="/" class="search-form">
+      <button type="submit" class="search-btn"></button>
+      <input type="text" placeholder="Search">
+    </form>
+
+    <section class="new-collection">
+
+      <div class="collection-text">
+        <h1 class="section-title">NEW<br>COLLECTION</h1>
+        <p>Summer
+          <br>2024</p>
+
+        <div class="shop-row">
+
+          <button class="shop-btn-main">
+            <span>Go To Shop</span>
+            <img src="images/long_right.svg" alt="long-right">
+          </button>
+
+          <div class="arrows">
+            <button class="arrow-btn">
+              <img src="images/left.svg" alt="left">
+            </button>
+
+            <button class="arrow-btn">
+              <img src="images/right.svg" alt="right">
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="collection-images">
+        <img src="images/men_white.jpg" alt="Модель 1">
+        <img src="images/black_shirt.jpg" alt="Модель 2">
+      </div>
+
+    </section>
+
+    <section class="new-this-week">
+
+      <div class="week-header">
+        <h1 class="section-title">NEW<br>THIS WEEK<sup class="product-count">(50)</sup></h1>
+        <span>See All</span>
+      </div>
+
+      <div class="week">
+
+        <div class="products">
+
+          <div class="product-card">
+            <img src="images/wave-shirt.jpg" alt="волна">
+            <button class="plus-btn">+</button>
+            <small>V-Neck T-Shirt</small>
+
+            <div class="product-info">
+              <p>Embroidered Seersucker Shirt</p>
+              <span>$99</span>
+            </div>
+
+          </div>
+
+          <div class="product-card">
+            <img src="images/white-shirt.jpg" alt="белая">
+            <button class="plus-btn">+</button>
+            <small>Cotton T-Shirt</small>
+
+            <div class="product-info">
+              <p>Basic Slim Fit T-Shirt</p>
+              <span>$99</span>
+            </div>
+
+          </div>
+
+          <div class="product-card">
+            <img src="images/watermark-shirt.jpg" alt="грязная">
+            <button class="plus-btn">+</button>
+            <small>Henley T-Shirt</small>
+
+            <div class="product-info">
+              <p>Blurred Print T-Shirt</p>
+              <span>$99</span>
+            </div>
+
+          </div>
+
+          <div class="product-card">
+            <img src="images/badges-shirt.jpg" alt="рисунки" class="last-shirt">
+            <button class="plus-btn">+</button>
+            <small>Crewneck T-Shirt</small>
+
+            <div class="product-info">
+              <p>Full Sleeve Zipper</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="arrows-week">
+          <button class="arrow-btn">
+            <img src="images/left.svg" alt="left">
+          </button>
+
+          <button class="arrow-btn">
+            <img src="images/right.svg" alt="right">
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="collections">
+
+      <div class="week-header">
+        <h1 class="section-title">XIV<br>COLLECTIONS<br>23-24</h1>
+
+        <div class="collections-top">
+
+          <div class="family">
+            <button>(ALL)</button>
+            <button>Men</button>
+            <button>Women</button>
+            <button>KID</button>
+          </div>
+
+          <div class="right-side">
+
+            <div class="filters">
+              <button>Filters(+)</button>
+              <button>Sorts(-)</button>
+            </div>
+
+            <div class="sort-order">
+              <button>Less to more</button>
+              <button>More to less</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="products">
+
+        <div class="product-card">
+          <img src="images/brown_shirt.jpg" alt="волна">
+          <button class="plus-btn">+</button>
+          <small>Cotton T-Shirt</small>
+
+          <div class="product-info">
+            <p>Basic Heavy Weight T-Shirt</p>
+            <span>$199</span>
+          </div>
+
+        </div>
+
+        <div class="product-card">
+          <img src="images/men_white.jpg" alt="белая">
+          <button class="plus-btn">+</button>
+          <small>Cotton Jeans</small>
+
+          <div class="product-info">
+            <p>Soft Wash Straight Fit Jeans</p>
+            <span>$199</span>
+          </div>
+
+        </div>
+
+        <div class="product-card">
+          <img src="images/men_white_shirt.jpg" alt="грязная">
+          <button class="plus-btn">+</button>
+          <small>Cotton T-Shirt</small>
+
+          <div class="product-info">
+            <p>Basic Heavy Weight T-Shirt</p>
+            <span>$199</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="more">
+        <button>More</button>
+      </div>
+
+    </section>
+
+    <section class="fashion-design">
+
+      <div class="fashion-text">
+        <h1>OUR APPROACH TO FASHION DESIGN</h1>
+        <p>at elegant vogue, we blend creativity with craftsmanship to create
+          <br>fashion that transcends trends and stands the test of time each
+          <br>design is meticulouslycrafted, ensuring the highest quelity
+          <br>exqulsite finish</p>
+      </div>
+
+      <div class="picture">
+        <img src="images/white_people.jpg" alt="">
+        <img src="images/men_brown.jpg" alt="">
+        <img src="images\men_white.jpg" alt="">
+        <img src="images\turtleneck.jpg" alt="">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div class="footer-left">
+      <div class="block">
+        <p class="label">INFO</p>
+        <div class="list">
+          <p>PRICING</p>
+          <p>ABOUT</p>
+          <p>CONTACTS</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="label">LANGUAGES</p>
+        <div class="list">
+          <p>ENG</p>
+          <p>ESP</p>
+          <p>SVE</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tech">
+      <p class="label">TECHNOLOGIES</p>
+
+      <div class="tech-list">
+        <div class="vr">
+          <h1>VR</h1>
+          <img src="images/icon_two.svg" alt="">
+        </div>
+
+        <div class="xiv-row">
+          <h1 class="xiv">XIV</h1>
+          <p class="nfc">Near-field communication</p>
+        </div>
+
+        <h1 class="qr">QR</h1>
+      </div>
 
     </div>
 
-</header>
-    
-    <main class="main">
+    <div class="footer-right"></div>
 
-        <section class="categories">
-            <ul>
-                <li><a href="#">MEN</a></li>
-                <li><a href="#">WOMEN</a></li>
-                <li><a href="#">KIDS</a></li>
-            </ul>
-        </section>
-
-        <form action="/" class="search-form">
-            <button type="submit" class="search-btn"></button>
-            <input type="text" placeholder="Search">
-        </form>
-
-        <section class="new-collection">
-
-            <div class="collection-text">
-                <h1 class="section-title">NEW<br>COLLECTION</h1>
-                <p>Summer<br>2024</p>
-
-                <div class="shop-row">
-                    
-                    <button class="shop-btn-main">
-                        <span>Go To Shop</span>
-                        <img src="images/long_right.svg" alt="long-right">
-                    </button>
-
-                    <div class="arrows">
-                        <button class="arrow-btn">
-                            <img src="images/left.svg" alt="left">
-                        </button>
-
-                        <button class="arrow-btn">
-                            <img src="images/right.svg" alt="right">
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="collection-images">
-                <img src="images/men_white.jpg" alt="Модель 1">
-                <img src="images/black_shirt.jpg" alt="Модель 2">
-            </div>
-
-        </section>
-
-        <section class="new-this-week">
-
-            <div class="week-header">
-                <h1 class="section-title">NEW<br>THIS WEEK</h1>
-                <span>See All</span>
-            </div>
-
-            <div class="week">
-    
-                <div class="products">
-
-                    <div class="product-card">
-                        <img src="images/wave-shirt.jpg" alt="волна">
-                        <small>V-Neck T-Shirt</small>
-
-                        <div class="product-info">
-                            <p>Embroidered Seersucker Shirt</p>
-                            <span>$99</span>
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="product-card">
-                        <img src="images/white-shirt.jpg" alt="белая">
-                        <small>Cotton T-Shirt</small>
-
-                        <div class="product-info">
-                            <p>Basic Slim Fit T-Shirt</p>
-                            <span>$99</span>
-                        </div>
-
-                    </div>
-                    
-                    <div class="product-card">
-                        <img src="images/watermark-shirt.jpg" alt="грязная">
-                        <small>Henley T-Shirt</small>
-
-                        <div class="product-info">
-                            <p>Blurred Print T-Shirt</p>
-                            <span>$99</span>
-                        </div>
-
-                    </div>
-                    
-                    <div class="product-card">
-                        <img src="images/badges-shirt.jpg" alt="рисунки" class="last-shirt">
-                        <small>Crewneck T-Shirt</small>
-
-                        <div class="product-info">
-                            <p>Full Sleeve Zipper</p>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="arrows-week">
-                    <button class="arrow-btn">
-                        <img src="images/left.svg" alt="left">
-                    </button>
-
-                    <button class="arrow-btn">
-                        <img src="images/right.svg" alt="right">
-                    </button>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="collections">
-
-            <div class="week-header">
-                <h1 class="section-title">XIV<br>COLLECTIONS<br>23-24</h1>
-
-                <div class="collections-top">
-
-                    <div class="family">
-                        <p>(ALL)</p>
-                        <p>Men</p>
-                        <p>Women</p>
-                        <p>KID</p>
-                    </div>
-
-                    <div class="right-side">
-
-                        <div class="filters">
-                            <p>Filters(+)</p>
-                            <p>Sorts(-)</p>
-                        </div>
-
-                        <div class="sort-order">
-                            <p>Less to more</p>
-                            <p>More to less</p>
-                        </div>
-
-                    </div>
-    
-                </div>
-                    
-            </div>
-
-            <div class="products">
-
-                <div class="product-card">
-                    <img src="images/brown_shirt.jpg" alt="волна">
-                    <small>Cotton T-Shirt</small>
-
-                    <div class="product-info">
-                        <p>Basic Heavy Weight T-Shirt</p>
-                        <span>$199</span>
-                    </div>
-                        
-                </div>
-                    
-                <div class="product-card">
-                    <img src="images/men_white.jpg" alt="белая">
-                    <small>Cotton Jeans</small>
-
-                    <div class="product-info">
-                        <p>Soft Wash Straight Fit Jeans</p>
-                        <span>$199</span>
-                    </div>
-
-                </div>
-                    
-                <div class="product-card">
-                    <img src="images/men_white_shirt.jpg" alt="грязная">
-                    <small>Cotton T-Shirt</small>
-
-                    <div class="product-info">
-                        <p>Basic Heavy Weight T-Shirt</p>
-                        <span>$199</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="more">
-                <button>More</button>
-            </div>
-
-        </section>
-
-        <section class="fashion-design">
-
-            <div class="fashion-text">
-                <h1>OUR APPROACH TO FASHION DESIGN</h1>
-                <p>at elegant vogue, we blend creativity with craftsmanship to create<br>fashion that transcends trends and stands the test of time each<br>design is meticulouslycrafted, ensuring the highest quelity<br>exqulsite finish</p>
-            </div>
-
-            <div class="picture">
-                <img src="images/white_people.jpg" alt="">
-                <img src="images/men_brown.jpg" alt="">
-                <img src="images\men_white.jpg" alt="">
-                <img src="images\turtleneck.jpg" alt="">
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-left">
-            <div class="block">
-                <p class="label">INFO</p>
-                <div class="list">
-                    <p>PRICING</p>
-                    <p>ABOUT</p>
-                    <p>CONTACTS</p>
-                </div>
-            </div>
-
-            <div class="block">
-                <p class="label">LANGUAGES</p>
-                <div class="list">
-                    <p>ENG</p>
-                    <p>ESP</p>
-                    <p>SVE</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="tech">
-            <p class="label">TECHNOLOGIES</p>
-
-            <div class="tech-list">
-                <div class="vr">
-                    <h1>VR</h1>
-                    <img src="images/icon_two.svg" alt="">
-                </div>
-
-                <div class="xiv-row">
-                    <h1 class="xiv">XIV</h1>
-                    <p class="nfc">Near-field communication</p>
-                </div>
-                
-                <h1 class="qr">QR</h1>
-            </div>
-
-        </div>
-
-        <div class="footer-right"></div>
-
-        <div class="floor">
-            <p class="copyright">© 2024 — copyright</p>
-            <p class="privacy">privacy</p>
-        </div>
-    </footer>
+    <div class="floor">
+      <p class="copyright">© 2024 — copyright</p>
+      <p class="privacy">privacy</p>
+    </div>
+  </footer>
 </body>
 
 </html>

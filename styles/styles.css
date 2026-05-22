@@ -72,17 +72,21 @@
 body {
     font-family: 'Beatrice', sans-serif;
     line-height: normal;
+
+    background-image: url("../images/noisy_background.png");
+    background-repeat: repeat;
 }
 
 /* Шапка сайта */
-.site-header {
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: 125px;
-    padding: 0 40px;
+}
 
+.site-header {
+    padding: 0 40px;
     position: relative;
 }
 
@@ -198,6 +202,11 @@ body {
 }
 
 /* ===== MAIN ===== */
+
+.fashion-design {
+    margin-bottom: 140px;
+}
+
 .categories {
     padding: 20px 40px; 
 }
@@ -366,6 +375,7 @@ body {
     font-size: 14px;
     line-height: 40px;
     cursor: pointer;
+    color: #888;
 
     align-self: flex-end;
 }
@@ -412,6 +422,7 @@ body {
 
 .new-this-week .product-card {
     width: 320px;
+    position: relative;
 }
 
 .new-this-week .product-card img {
@@ -428,8 +439,76 @@ body {
     margin-right: -96px;
 }
 
+.new-this-week .plus-btn {
+    position: absolute;
+
+    left: 50%;
+    bottom: 67px;
+
+    transform: translateX(-50%);
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    background: rgba(179, 179, 179, 0.182);
+    backdrop-filter: blur(6px);
+
+    color: #6e6e6e;
+    font-size: 22px;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+    cursor: pointer;
+}
+
+.product-count {
+    font-size: 18px;
+    color: #000E8A; /* Синий цвет */
+    display: inline-block;
+    vertical-align: text-top; /* Выравниваем по верхнему краю текста */
+    line-height: 0.5; /* Уменьшаем высоту строки для поднятия */
+}
+
 .collections .products { 
     grid-template-columns: repeat(3, 1fr); 
+}
+
+.collections .product-card {
+    position: relative;
+}
+
+.collections .plus-btn {
+    position: absolute;
+
+    left: 50%;
+    bottom: 60px;
+
+    transform: translateX(-50%);
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    background: rgba(179, 179, 179, 0.182);
+    backdrop-filter: blur(6px);
+
+    color: #6e6e6e;
+    font-size: 22px;
+    font-weight: 300;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+    cursor: pointer;
 }
 
 .arrows-week {
@@ -466,17 +545,45 @@ body {
     gap: 25px;
 }
 
-.family p {
+.family button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
     color: #888;
+    padding: 0;
 }
 
-.family p:first-child {
+.family button:first-child {
     color: #000;
 }
 
 .filters {
     display: flex;
     gap: 20px;
+}
+
+.filters button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding: 0;
+}
+
+.sort-order button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    color: #777;
+    text-align: right;
+    padding: 0;
 }
 
 .collections-top {
@@ -516,6 +623,7 @@ body {
     font-size: 14px;
     line-height: 40px;
     cursor: pointer;
+    color: #888;
 
     display: flex;
     flex-direction: column;
@@ -601,14 +709,21 @@ body {
 }
 
 /* подвал */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 footer {
     padding: 80px 40px 30px;
-    background: #fff;
+    background:rgba(120, 120, 120, 0.15);
 
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     row-gap: 120px;
+
+    color: #fff;
 }
 
 .footer-left {
@@ -623,7 +738,7 @@ footer {
     font-size: 12px;
     line-height: 140%;
     letter-spacing: 1px;
-    color: #888;
+    color: #888888;
     margin-bottom: 40px;
 }
 
@@ -634,6 +749,8 @@ footer {
     gap: 5px;
     font-size: 12px;
     line-height: 130%;
+    color: #6f6f6f;
+    cursor: pointer;
 }
 
 .list p {
