@@ -78,6 +78,22 @@ body {
 }
 
 /* Шапка сайта */
+a,
+button,
+input,
+.icon-btn,
+.shop-btn,
+.cart-btn,
+.menu-btn,
+.arrow-btn,
+.product-image {
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -131,6 +147,19 @@ body {
     letter-spacing: 2px;
 }
 
+.navigation a:hover {
+    color: #666;
+}
+
+.navigation a:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.navigation a:active {
+    opacity: 0.6;
+}
+
 /* ===== ЦЕНТРАЛЬНАЯ ИКОНКА ===== */
 .center-icon {
     width: 35px;
@@ -162,6 +191,19 @@ body {
     cursor: pointer;
 }
 
+.cart-btn:hover {
+    opacity: 0.85;
+}
+
+.cart-btn:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.cart-btn:active {
+    transform: scale(0.97);
+}
+
 .cart-btn img {
     width: 20px;
     height: 20px;
@@ -180,6 +222,19 @@ body {
     display: flex;
 }
 
+.menu-btn:hover {
+    opacity: 0.7;
+}
+
+.menu-btn:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.menu-btn:active {
+    transform: scale(0.95);
+}
+
 .menu-btn img {
     width: 26px;
     height: 16px;
@@ -196,10 +251,40 @@ body {
 
     padding: 1px;
 }
+
+.shop-btn-main:hover {
+    background-color: #cfcfcf;
+}
+
+.shop-btn-main:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.shop-btn-main:active {
+    transform: scale(0.98);
+}
+
 .shop-btn img {
     width: 40px;
     height: 40px;
     cursor: pointer;
+}
+
+.icon-btn:hover,
+.shop-btn:hover {
+    transform: scale(1.05);
+}
+
+.icon-btn:focus,
+.shop-btn:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.icon-btn:active,
+.shop-btn:active {
+    transform: scale(0.95);
 }
 
 /* ===== MAIN ===== */
@@ -222,6 +307,19 @@ body {
     font-size: 18px;
     line-height: auto;
     font-weight: 500;
+}
+
+.categories a:hover {
+    color: #666;
+}
+
+.categories a:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.categories a:active {
+    opacity: 0.6;
 }
 
 .search-form {
@@ -265,8 +363,8 @@ body {
 }
 
 .search-form input::placeholder {
-    font-size: 14px; /* Увеличиваем размер текста в подсказке */
-    color: #666; /* Можно задать цвет placeholder */
+    font-size: 14px; 
+    color: #666; 
 }
 
 .section-title {
@@ -299,6 +397,8 @@ body {
 }
 
 .shop-btn-main {
+    text-decoration: none;
+    color: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -333,6 +433,23 @@ body {
     justify-content: center;
 
     cursor: pointer;
+
+    width: 48px;
+    height: 48px;
+    border: none;
+}
+
+.arrow-btn:hover {
+    opacity: 0.7;
+}
+
+.arrow-btn:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.arrow-btn:active {
+    transform: scale(0.9);
 }
 
 .arrow-btn img {
@@ -361,6 +478,12 @@ body {
 }
 
 .collection-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.collection-images img {
     width: 366px;
     height: 376px;
 }
@@ -376,7 +499,7 @@ body {
     width: 100%;
 }
 
-.week-header span {
+.week-header a {
     font-size: 14px;
     line-height: 40px;
     cursor: pointer;
@@ -385,10 +508,26 @@ body {
     align-self: flex-end;
 }
 
+.plus-btn:hover {
+    background: rgba(179, 179, 179, 0.35);
+}
+
+.plus-btn:focus {
+    outline: 2px solid #000;
+}
+
+.plus-btn:active {
+    transform: translateX(-50%) scale(0.9);
+}
+
 .products {
     display: grid;
     gap: 30px;
 
+}
+
+.product-image {
+    display: block;
 }
 
 .product-card img {
@@ -406,11 +545,36 @@ body {
     color: #777;
 }
 
-.product-card p {
+.product-card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
     margin-top: 5px;
     font-size: 14px;
     line-height: auto;
     font-weight: 400;
+}
+
+.product-card {
+    cursor: pointer;
+}
+
+.product-card:active {
+    transform: scale(0.98);
+}
+
+.product-image:hover {
+    opacity: 0.9;
+}
+
+.product-image:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.product-image:active {
+    opacity: 0.7;
 }
 
 .product-card span {
@@ -447,7 +611,7 @@ body {
     position: absolute;
 
     left: 50%;
-    bottom: 67px;
+    bottom: 61px;
 
     transform: translateX(-50%);
 
@@ -491,7 +655,7 @@ body {
     position: absolute;
 
     left: 50%;
-    bottom: 60px;
+    bottom: 59px;
 
     transform: translateX(-50%);
 
@@ -560,12 +724,27 @@ body {
 
     font-weight: 400; 
     font-size: 16px;
+
+    transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .family button:first-child {
     color: #000;
     font-weight: 500; 
     font-size: 16px;
+}
+
+.family button:hover {
+    color: #000;
+}
+
+.family button:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.family button:active {
+    opacity: 0.6;
 }
 
 .filters {
@@ -595,6 +774,27 @@ body {
     color: #777;
     text-align: right;
     padding: 0;
+}
+
+.filters button,
+.sort-order button {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.filters button:hover,
+.sort-order button:hover {
+    color: #666;
+}
+
+.filters button:focus,
+.sort-order button:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.filters button:active,
+.sort-order button:active {
+    opacity: 0.6;
 }
 
 .collections-top {
@@ -641,6 +841,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.more button:hover {
+    color: #000;
+}
+
+.more button:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.more button:active {
+    opacity: 0.6;
 }
 
 .more button::after {
@@ -764,12 +977,18 @@ footer {
     font-weight: 400;
     line-height: 130%;
     color: #6f6f6f;
-    cursor: pointer;
 }
 
-.list p {
+.list a {
     line-height: 1;
     margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #6f6f6f;
+}
+
+.list a:hover {
+    color: #000;
 }
 
 /* центр */
@@ -787,6 +1006,22 @@ footer {
     gap: 2px;
 
     margin-left: 215px;
+}
+
+.copyright {
+    position: absolute;
+    right: -320px;
+
+    text-decoration: none;
+    color: #888;
+}
+
+.privacy {
+    position: absolute;
+    left: 900px;
+
+    text-decoration: none;
+    color: #888;
 }
 
 .tech-list h1 {
@@ -865,6 +1100,28 @@ footer {
     left: 900px;
 }
 
+.copyright:hover,
+.privacy:hover,
+.list a:hover,
+.week-header a:hover {
+    color: #000;
+}
+
+.copyright:focus,
+.privacy:focus,
+.list a:focus,
+.week-header a:focus {
+    outline: 2px solid #000;
+    outline-offset: 4px;
+}
+
+.copyright:active,
+.privacy:active,
+.list a:active,
+.week-header a:active {
+    opacity: 0.6;
+}
+
 /* мобильная версия */
 
 @media (max-width: 768px) {
@@ -878,15 +1135,15 @@ footer {
         line-height: 42px;
     }
 
+    .new-this-week .plus-btn,
+    .collections .plus-btn {
+        display: none;
+    }
+
     .new-collection,
     .new-this-week,
     .collections {
         padding: 30px 20px;
-    }
-
-    .new-this-week .plus-btn,
-    .collections .plus-btn {
-        display: none;
     }
 
     /* ===== HEADER ===== */
@@ -967,6 +1224,18 @@ footer {
         margin-bottom: 0px;
     }
 
+    
+    .collection-images a {
+        flex: 1;
+        display: block;
+    }
+
+    .collection-images a img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
     .shop-row {
         display: flex;
         flex-direction: column;
@@ -996,23 +1265,9 @@ footer {
         display: none;
     }
 
-    .collection-images img {
-        width: 50%;
-        height: 220px;
-        object-fit: cover;
-        display: block;
-        flex: 1;
-    }
-
     .arrows,
     .arrows-week {
         display: none;
-    }
-
-    .arrow-btn {
-        width: 48px;
-        height: 48px;
-        border: 1px solid #d9d9d9;
     }
 
     /* ===== NEW THIS WEEK ===== */
@@ -1032,14 +1287,6 @@ footer {
     .new-this-week {
         padding-top: 0;
         padding: 20px 20px 10px;
-    }
-
-    .product-card {
-        cursor: pointer;
-    }
-
-    .product-card:active {
-        transform: scale(0.98);
     }
 
     .new-this-week .products::-webkit-scrollbar {
@@ -1125,7 +1372,7 @@ footer {
     }
 
     .picture::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
+        display: none;
     }
 
     .picture img {
