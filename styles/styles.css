@@ -82,6 +82,7 @@ a,
 button,
 input,
 .icon-btn,
+.profile-btn,
 .shop-btn,
 .cart-btn,
 .menu-btn,
@@ -114,7 +115,8 @@ input,
 }
 
 /* ===== МЕНЮ-КНОПКА ===== */
-.icon-btn {
+.icon-btn,
+.profile-btn {
     border-radius: 50%;
     background-color: #000;
 
@@ -125,7 +127,8 @@ input,
     padding: 1px;
 }
 
-.icon-btn img {
+.icon-btn img,
+.profile-btn img {
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -272,17 +275,20 @@ input,
 }
 
 .icon-btn:hover,
+.profile-btn:hover,
 .shop-btn:hover {
     transform: scale(1.05);
 }
 
 .icon-btn:focus,
+.profile-btn:focus,
 .shop-btn:focus {
     outline: 2px solid #000;
     outline-offset: 4px;
 }
 
 .icon-btn:active,
+.profile-btn:active,
 .shop-btn:active {
     transform: scale(0.95);
 }
@@ -1414,4 +1420,89 @@ footer {
     .privacy {
         position: static;
     }
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.modal {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+
+    width: 400px;
+    padding: 40px;
+
+    background: #fff;
+
+    border: 1px solid #d9d9d9;
+}
+
+.modal-content h2 {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form input {
+    height: 50px;
+
+    border: 1px solid #d9d9d9;
+
+    padding: 0 15px;
+
+    font-family: inherit;
+}
+
+.login-submit {
+    height: 50px;
+
+    border: none;
+
+    background: #000;
+    color: #fff;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.login-submit:hover {
+    opacity: 0.85;
+}
+
+.close-modal {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    border: none;
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
 }
