@@ -423,8 +423,9 @@ body {
 
 .new-this-week .products { 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 30px;
+    flex-wrap: nowrap;
 } 
 
 .new-this-week .product-card {
@@ -440,10 +441,6 @@ body {
 .new-this-week .product-card:last-child img {
     width: 80%;
     object-fit: cover;
-}
-
-.new-this-week .product-card:last-child {
-    margin-right: -96px;
 }
 
 .new-this-week .plus-btn {
@@ -726,21 +723,19 @@ body {
 }
 
 /* подвал */
-.container {
+footer {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    background: rgba(120, 120, 120, 0.15);
+    padding: 80px 40px 30px;
 }
 
-footer {
-    padding: 80px 40px 30px;
-    background:rgba(120, 120, 120, 0.15);
-
+.footer-inner {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
     row-gap: 120px;
 
-    color: #fff;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-left {
@@ -1054,10 +1049,6 @@ footer {
     .new-this-week .product-card {
         flex-shrink: 0;
         width: 180px;
-    }
-
-    .new-this-week .product-card:last-child {
-        margin-right: 0;
     }
 
     /* ===== COLLECTIONS ===== */
